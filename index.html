@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drawing App with Tools</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Drawing App with Tools</h1>
+        <div>
+            <button onclick="setTool('pencil')" id="btn">Pencil</button>
+            <button onclick="setTool('brush')" id="btn">Brush</button>
+            <button onclick="setTool('marker')" id="btn">Marker</button>
+            <button onclick="setTool('eraser')" id="btn">Eraser</button>
+            <input type="color" id="colorPicker" value="#333" onchange="setColor()">
+            <button onclick="clearCanvas()" id="btn">Clear</button>
+            
+        </div>
+        <canvas id="drawingCanvas" width="800" height="600"></canvas>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
