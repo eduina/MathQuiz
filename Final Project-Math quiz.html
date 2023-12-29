@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Final Project-Math quiz.css">
+    <title>Math Quiz with Calculator</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Math Quiz </h1>
+
+        <div class="row">
+            <div class="left">
+                <img src="MATH-Symbols.jpg">
+                <!-- Button to show the calculator -->
+                <button onclick="showCalculator()" id="calculatorBtn">Show Calculator</button>
+    
+                <!-- Calculator container -->
+                <div id="calculator-container">
+                    <!-- Calculator content -->
+                    <h2>Calculator</h2>
+                    <!-- Add your calculator input and output elements here -->
+                    <input type="text" id="calculator-input">
+                    <br>
+                    <button onclick="calculate()">Calculate</button>
+    
+                    <!-- Button to hide the calculator -->
+                    <button onclick="hideCalculator()">Hide Calculator</button>
+                    <p id="result"></p>
+    
+                </div>
+            </div>
+            <div class="right">
+                <div class="quiz-container" id="quiz">
+                    <div class="quiz-header">
+                        <h2 id="question">Question</h2>
+                        <ul>
+                            <li>
+                                <input type="radio" name="answer" id="a" class="answer">
+                                <label for="a" id="a_text">answer</label>
+                            </li> 
+                            <li>
+                                <input type="radio" name="answer" id="b" class="answer">
+                                <label for="b" id="b_text">answer</label>
+                            </li> 
+                            <li>
+                                <input type="radio" name="answer" id="c" class="answer">
+                                <label for="c" id="c_text">answer</label>
+                            </li> 
+                            <li>
+                                <input type="radio" name="answer" id="d" class="answer">
+                                <label for="d" id="d_text">answer</label>
+                            </li> 
+                        </ul>
+                    </div>
+                    <button id="submit">submit</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="Final Project-Math quiz.js"></script>
+</body>
+</html>
